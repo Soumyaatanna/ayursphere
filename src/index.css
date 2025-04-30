@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 100 100% 100%;
+    --foreground: 142 30% 30%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 142 30% 30%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 30% 30%;
+
+    --primary: 142 50% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 30% 90%;
+    --secondary-foreground: 142 50% 25%;
+
+    --muted: 142 30% 95%;
+    --muted-foreground: 142 15% 45%;
+
+    --accent: 140 25% 75%;
+    --accent-foreground: 142 50% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 142 30% 85%;
+    --input: 142 30% 85%;
+    --ring: 142 50% 36%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 142 30% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 142 30% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 142 30% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 142 50% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 30% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 142 30% 15%;
+    --muted-foreground: 142 15% 70%;
+
+    --accent: 142 30% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 142 30% 20%;
+    --input: 142 30% 20%;
+    --ring: 142 50% 36%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .ayur-container {
+    @apply container max-w-6xl mx-auto px-4 md:px-6;
+  }
+  
+  .prose-ayur {
+    @apply prose prose-green prose-img:rounded-lg prose-headings:font-serif prose-p:text-foreground/90 prose-a:text-ayur-green;
+  }
+}
