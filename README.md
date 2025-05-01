@@ -13,9 +13,8 @@ AyurSphere is a community-driven blogging platform where users can share Ayurved
 - **Admin Panel** – Separate dashboard for managing posts and user submissions.
 
 ## 🛠️ Tech Stack
-- **Frontend:** React.js, TypeScript, Tailwind CSS
-- **Backend:** Node.js, Express.js, TypeScript
-- **Database:** MongoDB
+- **Frontend:**  TypeScript, Tailwind CSS
+- **Backend:** Node.js, TypeScript
 - **Authentication:** Firebase / JWT-based authentication
 - **Hosting:** Vercel / Netlify (Frontend), Heroku / Render (Backend)
 
